@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cotation SMS">
+    <link rel="stylesheet" href="css/cotation.css">
+    <title>Cotation</title>
+</head>
+<body>
+    <header id="header">
+        <h3>SMS Zanner</h3>
+        <a href="#">
+            <p>Se déconnecter</p>
+        </a>
+    </header>
+    <section class="section-principale">
+        <div class="bloc-gauche">
+            <div>
+                <h1>3ème A</h1>
+                <p>Cotation</p>
+            </div>
+        </div>
+        <div class="bloc-central">
+            <div class="bloc-one">
+                <div class="classe">
+                    <p>Cotation 3ème A</p>
+                </div>
+                <div class="tableau">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>N°</th>
+                                <th>Nom, Post-nom & Prénom</th>
+                                <th>1P</th>
+                                <th>2P</th>
+                                <th>TOT1</th>
+                                <th>3P</th>
+                                <th>4P</th>
+                                <th>TOT2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>Lorem ipsum dolor</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>Lorem ipsum dolor</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="links-btn">
+                    <a href="#">
+                        <p class="btn-save">Sauvegarder</p>
+                    </a>
+                    <a href="#">
+                        <p class="btn-send">Envoyer</p>
+                    </a>
+                </div>
+                <div class="bloc-resultat">
+                    <div class="resultat-premier">
+                        <h5>Les 5 premiers</h5>
+                        <p>1. Lorem: 90%</p>
+                        <p>2. Lorem : 88%</p>
+                        <p>3. Lorem : 70%</p>
+                        <p>4. Lorem : 63%</p>
+                        <p>5. Lorem : 60%</p>
+                    </div>
+                    <div class="resultat-fille">
+                        <h5>Réussite filles</h5>
+                        <p>Total : 50</p>
+                        <p>Pourcentage : 60%</p>
+                        <div class="progress3">
+                            <div class="progress-bar3"></div>
+                        </div>
+                    </div>
+                    <div class="resultat-garcon">
+                        <h5>Réussite garçons</h5>
+                        <p>Total : 50</p>
+                        <p>Pourcentage : 60%</p>
+                        <div class="progress3">
+                            <div class="progress-bar3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bloc-droit">
+                <h4>Evaluation résultats</h4>
+                <div class="evaluation">
+                    <div class="reussite">
+                        <h5>Nombre de réussites</h5>
+                        <p>Total : 80</p>
+                        <P>Pourcentage : 80%</P>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                    <div class="echec">
+                        <h5>Nombre d'échecs</h5>
+                        <p>Total : 80</p>
+                        <P>Pourcentage : 12%</P>
+                        <div class="progress2">
+                            <div class="progress-bar2"></div>
+                        </div>
+                    </div>
+                    <div class="proclamme">
+                        <h5>Non proclammés</h5>
+                        <p>Total : 80</p>
+                        <P>Pourcentage : 88%</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header").style.top = "0";
+      } else {
+        document.getElementById("header").style.top = "-55px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+</script>
+</html>

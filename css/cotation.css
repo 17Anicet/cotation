@@ -1,0 +1,391 @@
+@font-face{
+    font-family: 'Sen-Regular';
+    src: url('Sen-Regular.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Sen-Regular';
+    background-color: #f2fdff;
+}
+/**************************************************************/
+header{
+    width: 100%;
+    color: white;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+    background-color: rgb(0, 2, 30);
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    transition: top 0.5s;
+}
+header a{
+    padding: 8px;
+    color: black;
+    border-radius: 30px;
+    background-color: white;
+}
+/**************************************************************/
+.section-principale{
+    display: flex;
+    grid-template-columns: auto auto auto;
+}
+.bloc-gauche{
+    width: 300px;
+    height: 100vh;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.486);
+}
+.bloc-gauche div {
+    padding-top: 40px;
+}
+.bloc-gauche h1{
+    padding-left: 30px;
+}
+.bloc-gauche div p{
+    font-weight: bolder;
+    margin-top: 40px;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: #e3f3ff;
+}
+/**************************************************************/
+.bloc-central{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.bloc-one{
+    margin-top: 40px;
+    padding: 20px;
+}
+.classe p{
+    font-size: large;
+    font-weight: bolder;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #2698ff;
+}
+table{
+    width: 100%;
+    margin-top: 30px;
+    background-color: white;
+    border-collapse: collapse;
+}
+thead, tbody tr{
+    border: 1px solid black;
+} 
+thead th, tbody td{
+    padding: 3px;
+    text-align: left;
+}
+.links-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+}
+.btn-save{
+    width: 150px;
+    padding: 8px;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+.btn-send{
+    width: 150px;
+    padding: 8px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid rgb(0, 2, 30);
+    background-color: rgb(0, 2, 30);
+}
+.bloc-resultat{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 40px;
+    align-items: start;
+    justify-content: center;
+}
+.resultat-premier{
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.486);
+}
+.resultat-premier:hover{
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.486);
+}
+.resultat-premier h5{
+    padding: 7px;
+    color: white;
+    background-color: rgb(0, 2, 30);
+}
+.resultat-premier p{
+    padding: 7px;
+}
+.resultat-general{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.resultat-fille, .resultat-garcon{
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.486);
+}
+.resultat-fille:hover, .resultat-garcon:hover{
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.486);
+}
+.progress3{
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(184, 185, 188);
+}
+.progress-bar3{
+    width: 60%;
+    height: 100%;
+    background-color: green;
+    animation: progress3 1s;
+}
+@keyframes progress3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+.resultat-fille h5, .resultat-garcon h5{
+    color: white;
+    padding: 7px;
+    background-color: rgb(0, 2, 30);
+}
+.resultat-fille p, .resultat-garcon p{
+    padding: 7px;
+}
+/**************************************************************/
+.bloc-droit h4{
+    margin-top: 60px;
+}
+.evaluation{
+    padding: 20px;
+}
+.bloc-droit h4{
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(237, 237, 237);
+}
+.reussite{
+    margin-top: 20px;
+    background-color: white;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0, 0.486);
+}
+.reussite h5{
+    padding: 4px;
+    color: white;
+    border-top-right-radius: 35px;
+    background-color: rgb(0, 2, 30);
+}
+.reussite p{
+    padding: 4px;
+    padding-left: 10px;
+}
+.progress{
+    height: 8px;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(184, 185, 188);
+}
+.progress-bar{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(0, 2, 30);
+    animation: animate 1s;
+}
+@keyframes animate{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.reussite:hover, .echec:hover, .proclamme:hover{
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.486);
+}
+.echec{
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 3px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0, 0.486);
+}
+.echec h5{
+    color: white;
+    padding: 4px;
+    background-color: rgb(206, 28, 28);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top-right-radius: 35px;
+}
+.echec p{
+    padding: 4px;
+}
+.progress2{
+    width: 100%;
+    height: 8px;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(245, 165, 165);
+}
+.progress-bar2{
+    width: 12%;
+    height: 100%;
+    background-color: rgb(206, 28, 28);
+    animation: animation 1s;
+}
+@keyframes animation{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 12%;
+    }
+}
+.proclamme{
+    margin-top: 20px;
+    align-items: center;
+    border-top-right-radius: 35px;
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0, 0.486);
+}
+.proclamme h5{
+    padding: 4px;
+    color: white;
+    background-color: green;
+    border-top-right-radius: 35px;
+
+}
+.proclamme p{
+    padding: 4px;
+}
+/* *************************************************** */
+/* ***************** *MEDIA QUERIES* ***************** */
+/* *************************************************** */
+@media all and (max-width: 1000px){
+    .bloc-gauche{
+        width: 250px;
+    }
+}
+@media all and (max-width: 968px){
+    .resultat-general{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .resultat-premier p{
+        padding: 0.6rem;
+    }
+}
+@media all and (max-width: 924px){
+    .tableau{
+        overflow: scroll;
+        margin-top: 20px;
+    }
+    table{
+        width: 130%;
+    }
+}
+@media all and (max-width: 795px){
+    .bloc-gauche{
+        display: none;
+    }
+    table{
+        width: 150%;
+    }
+}
+@media all and (max-width: 942px){
+    .bloc-resultat{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    } 
+    .resultat-premier{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
+@media all and (max-width: 605px){
+    .bloc-central{
+        display: flex;
+        flex-direction: column;
+    }
+    .evaluation{
+        gap: 15px;
+        padding-top: 0px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .bloc-droit h4{
+        margin-top: 10px;
+    }
+}
+@media all and (max-width: 392px){
+    .bloc-resultat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+    .resultat-premier, .resultat-fille, .resultat-garcon{
+        text-align: center;
+        width: 100%;
+    }
+    .evaluation{
+        display: flex;
+        flex-direction: column;
+    }
+    .reussite, .echec, .proclamme{
+        width: 100%;
+    }
+}
+@media all and (max-width: 356px){
+    table{
+        width: 230%;
+    }
+    .links-btn{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* *************************************************** */
+/* *************************************************** */
